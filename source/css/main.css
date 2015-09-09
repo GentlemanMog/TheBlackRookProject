@@ -1,0 +1,74 @@
+body{
+	background-color: #3f0f0f;
+}
+
+.borders{
+	border: 1px solid crimson;
+}
+.navbar-header{
+	float:left;
+	margin-left: 3px;
+}
+.navbar-default{
+	background-color: #8b4a4a;
+	border: 1px solid #8b4a4a;
+}
+.navmain{
+	background-color: #3f0f0f;	
+}
+.margin-btn{
+	margin-bottom: -37px;
+}
+.container-fluid{
+	background-color: #8b4a4a;
+}
+.soft-body{
+	background-color: #3f0f0f;
+}
+.uppersection{
+	height: 250px;
+	margin-top: -78px;
+}
+.about-details{
+	height: 150px;
+	margin: 20px;
+}
+
+
+.customize-btn{
+	margin-right: 35px;
+	margin-top: -150px;
+	width: 90px;
+}
+.bubble 
+{
+	float:right;
+position: relative;
+width: 70px;
+height: 70px;
+padding: 0px;
+background: #8b4a4a;
+border-radius: 73px;
+}
+
+.bubble:after 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 5px 0 5px 28px;
+border-color: transparent #8b4a4a;
+display: block;
+width: 0;
+z-index: 1;
+margin-top: -5px;
+right: -28px;
+top: 49%;
+}
+
+#draggable{
+
+}
+#customizable{
+	
+}

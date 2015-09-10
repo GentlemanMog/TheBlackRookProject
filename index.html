@@ -9,7 +9,11 @@
 
     <!-- Bootstrap -->
     <link href="source/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="source/css/jquery-ui.min.css" rel="stylesheet">
+
     <link href="source/css/main.css" rel="stylesheet">
+
 
     
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -22,35 +26,77 @@
 
   <body>
 
-    <div id="customizable" class="navmain ui-widget-content customizable">
-      <div class="container borders">
+    <div class="navmain">
+      <div class="container borders draggable">
         <nav class="navbar navbar-default">
           <div class="container-fluid">
 
-            <div class="navbar-header borders">
-              <button type="button" class="btn btn-default navbar-btn margin-btn">Followers</button>
+            <div class="navbar-header dropdown margin-btnNav borders">
+              <button id="dropdownMenu1" type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle margin-btn" aria-haspopup="true" aria-expanded="true">Followers <span class="caret"></span></button>
+
+               <ul class="dropdown-menu sortable" aria-labelledby="dropdownMenu1">
+
+                  <li>-------Recent--------</li>
+
+                  <li><a href="#" class="thumbnail"><img src="user/userID_271427/profile/common/images/Guy2.png"></a></li>
+
+                  <li><a href="#" class="thumbnail"><img src="user/userID_271427/profile/common/images/Guy3.png"></a></li>
+
+                  <li role="seperator" class="divider"></li>
+
+                  <li><a href="#">More followers</a></li>
+                </ul>
             </div>
 
-            <div class="navbar-header borders">
-              <button type="button" class="btn btn-default navbar-btn margin-btn">Following</button>
+            <div class="navbar-header dropdown margin-btnNav borders">
+              <button id="dropdownMenu1" type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle margin-btn" aria-haspopup="true" aria-expanded="true">Following <span class="caret"></span></button>
+
+               <ul class="dropdown-menu sortable" aria-labelledby="dropdownMenu1">
+
+                  <li>-------Recent--------</li>
+
+                  <li><a href="#" class="thumbnail"><img src="user/userID_271427/profile/common/images/Guy2.png"></a></li>
+
+                  <li><a href="#" class="thumbnail"><img src="user/userID_271427/profile/common/images/Guy3.png"></a></li>
+
+                  <li role="seperator" class="divider"></li>
+
+                  <li><a href="#">More followings</a></li>
+                </ul>
             </div>
           
-            <div class="navbar-header borders col-lg-4 col-md-4 col-sm-3 col-xs-3"></div>
+            <div class="navbar-header borders col-lg-4 col-md-2 col-sm-2 col-xs-2"></div>
 
-            <div class="navbar-header borders nav-icon">
+            <div class="navbar-header borders nav-icon margin-btnNav">
               <a class="navbar-brand" href="index.html">
                 <img  src="source/images/Rook.png">
               </a>
             </div>
 
-            <div class="navbar-header borders col-lg-4 col-md-3 col-sm-2 col-xs-4"></div>
+            <div class="navbar-header borders col-lg-3 col-md-3 col-sm-2 col-xs-2"></div>
 
-            <div class="navbar-header borders">
+            <div class="navbar-header margin-btnNav borders">
               <button type="button" class="btn btn-default navbar-btn margin-btn">Logout</button>
             </div>
 
-            <div class="navbar-header borders">
-              <button type="button" class="btn btn-default navbar-btn margin-btn">Admin</button>
+            <div class="navbar-header dropdown margin-btnNav borders">
+              <button id="dropdownMenu1" type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle margin-btn" aria-haspopup="true" aria-expanded="true">Admin<span class="caret"></span></button>
+
+               <ul class="dropdown-menu sortable" aria-labelledby="dropdownMenu1">
+
+                  <li><a href="user/userID_271427/profile/adminpage.html" class="thumbnail"><img src="user/userID_271427/profile/common/images/Guy1.png"></a></li>
+
+                  <li><a href="#">Image Library</a></li>
+
+                  <li><a href="#">Video Library</a></li>
+
+                  <li><a href="#">Stream Page</a></li>
+
+                  <li role="seperator" class="divider"></li>
+
+                  <li><a href="#">AutoHide NavBar</a></li>         
+
+                </ul>
             </div>
  
           </div>
@@ -59,27 +105,48 @@
     </div>
 
       
-    <div class="soft-body borders">
+    <div class="soft-body">
       <div class="uppersection borders"></div>
 
-      <div class="container wrapper borders">
-      <div id="customizable" class="row">
-        
+      <div id="draggable" class="container draggable wrapper about-container borders">
+      <div  class="row">
+        <ul class="sortable">
 
-        <div id="customizable" class="about-details borders"></div>
+        <li><div id="details" class="about-details borders">
+            <div class="gallery">image</div>
 
-        <div id="customizable" class="about-details borders"></div>
+            <p>
+              <h1> About Us</h1>
+            </p>
 
-        <div id="customizable" class="about-details borders"></div>
+        </div></li>
 
-        <div class="about-details borders"></div>
+        <li><div id="details" class="about-details borders">
+          <div class="gallery secondary">image</div>
+
+          <p>
+            <h1>Why we are here</h1>
+          </p>
+
+        </div></li>
+
+        <li><div id="details" class="about-details borders">
+          <div class="gallery">image</div>
+
+          <p><h2> Your creation</h2></p>
+        </div></li>
+
+        <li><div id="details" class="about-details borders">
+          <div class="gallery secondary">image</div>
+        </div></li>
+
      </div>   
 
       </div>
     </div>
 
-    <div id="customizable" class="container customize-btn ui-widget-content borders">
-      <div class="btn bubble customize"></div>
+    <div class="container customize-btn borders draggable">
+      <div class="btn bubble customize"><img src="source/images/+.png"></div>
     </div>
 
 
@@ -90,8 +157,12 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://ajax..com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <script src="source/bootstrap.min.js"></script>
 
+<!--Jquary UI JS Plugin -->
+  <script src="source/jquery-ui.js"></script>
+
+<!--Own Plugin -->
 <script src="source/main.js"></script>
 
 

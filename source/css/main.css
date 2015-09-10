@@ -1,10 +1,15 @@
 body{
 	background-color: #3f0f0f;
+	font-family: Nasalization;
+	color: #b4b4b4;
+	text-align: center;
+	/*max-height: 1080px;*/
 }
 
 .borders{
 	border: 1px solid crimson;
 }
+
 .navbar-header{
 	float:left;
 	margin-left: 3px;
@@ -16,12 +21,14 @@ body{
 .navmain{
 	background-color: #3f0f0f;	
 }
+
 .margin-btn{
-	margin-bottom: -37px;
+	margin-bottom: 0px;
 }
 .container-fluid{
 	background-color: #8b4a4a;
 }
+
 .soft-body{
 	background-color: #3f0f0f;
 }
@@ -29,16 +36,26 @@ body{
 	height: 250px;
 	margin-top: -78px;
 }
+.about-container{
+	background-color: #551717;
+}
 .about-details{
 	height: 150px;
 	margin: 20px;
+	margin-right: 0px;
+	margin-left: 0px;
+	background-color: #7a7f9c;
+}
+.larger-details:{
+	height: 500px;
+	width: 500px;
 }
 
 
 .customize-btn{
 	margin-right: 35px;
 	margin-top: -150px;
-	width: 90px;
+	width: 10px;
 }
 .bubble 
 {
@@ -66,9 +83,23 @@ right: -28px;
 top: 49%;
 }
 
-#draggable{
-
+ul{
+    list-style-type: none;
 }
-#customizable{
-	
+.gallery{
+	float: left;
+	text-align: center;
+	margin: 25px;
+	margin-left: 50px;
+	background-color: white;
+	border:0px dashed yellow;
+	height:100px;
+	width: 100px;
+	border-radius: 73px;
+}
+.secondary{
+	float:right;
+}
+.draggable{
+	min-width: 370px;
 }
